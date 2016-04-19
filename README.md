@@ -6,5 +6,7 @@ and the device always remains discoverable via bluetooth.
 This can be turned off with bluetoothctl ("discoverable off").
 
 Note, to make terminal interactive:
+
 su pi -
+
 ssh localhost
