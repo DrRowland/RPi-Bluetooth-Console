@@ -6,7 +6,7 @@ sudo sed -i: 's|^Exec.*toothd$| \
 ExecStart=/usr/lib/bluetooth/bluetoothd -C \
 ExecStartPost=/usr/bin/sdptool add SP \
 ExecStartPost=/bin/hciconfig hci0 piscan \
-|g' /etc/systemd/system/dbus-org.bluez.service
+|g' /lib/systemd/system/bluetooth.service
 
 sudo cat <<EOF | sudo tee /etc/systemd/system/rfcomm.service > /dev/null
 [Unit]
