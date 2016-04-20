@@ -16,3 +16,7 @@ pi@raspberrypi:~$ su pi - -c "ssh localhost"
 Password: ********
 pi@localhost's password: ********
 ```
+
+For reference as to why this works:
+
+http://serverfault.com/questions/411307/cannot-set-terminal-process-group-during-su-to-another-user-as-login-shell
