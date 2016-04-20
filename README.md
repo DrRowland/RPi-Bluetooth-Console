@@ -6,12 +6,11 @@ and the device always remains discoverable via bluetooth.
 This can be turned off with bluetoothctl ("discoverable off").
 
 Note, to make terminal interactive:
-
-su pi -
-
+```su pi -
 ssh localhost
-
+```
 e.g.
-pi@raspberrypi:~$ su pi - -c "ssh localhost"
+```pi@raspberrypi:~$ su pi - -c "ssh localhost"
 Password: ********
 pi@localhost's password: ********
+```
