@@ -1,6 +1,12 @@
 #!/bin/bash -e
 
-echo Script for Linux raspberrypi 4.1.19-v7+ #858
+echo Script for Raspberry Pi Zero W 1.1
+echo Linux raspberrypi 4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+echo Run once and reboot, do not run again.
+
+sudo bluetoothctl <<EOF
+discoverable on
+EOF
 
 sudo sed -i: 's|^Exec.*toothd$| \
 ExecStart=/usr/lib/bluetooth/bluetoothd -C \
@@ -23,5 +29,7 @@ EOF
 
 sudo systemctl enable rfcomm
 
-echo Pair and "screen /dev/cu.raspberrypi-SerialPort 115200"
+echo Now pair and connect.
+echo E.g. In OSX, pair and in a terminal type:
+echo screen /dev/cu.raspberrypi-SerialPort 115200
 
