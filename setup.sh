@@ -3,8 +3,9 @@
 echo Script for Raspberry Pi Zero W 1.1
 echo Linux raspberrypi 4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
 echo Run once, reboot, and do not run again.
+echo Running...
 
-sudo bluetoothctl <<EOF
+sudo bluetoothctl <<EOF > /dev/null
 discoverable on
 EOF
 
