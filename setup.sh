@@ -2,7 +2,7 @@
 
 echo Script for Raspberry Pi Zero W 1.1
 echo Linux raspberrypi 4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
-echo Run once and reboot, do not run again.
+echo Run once, reboot, and do not run again.
 
 sudo bluetoothctl <<EOF
 discoverable on
@@ -29,7 +29,7 @@ EOF
 
 sudo systemctl enable rfcomm
 
-echo Now pair and connect.
+echo Now reboot, pair and connect.
 echo E.g. In OSX, pair and in a terminal type:
 echo screen /dev/cu.raspberrypi-SerialPort 115200
 
