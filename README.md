@@ -5,7 +5,11 @@ N.B. There is no security implemented here (no pin etc...),
 and the device always remains discoverable via bluetooth.
 This can be turned off with bluetoothctl ("discoverable off").
 
-Note, to make terminal interactive:
+To access, open a terminal (e.g. OSX)
+```
+screen /dev/cu.raspberrypi-SerialPort 115200
+```
+Optional note, to make terminal interactive:
 ```
 su pi -
 ssh localhost
