@@ -11,11 +11,6 @@ screen /dev/cu.raspberrypi-SerialPort 115200
 ```
 Optional note, to make terminal interactive:
 ```
-su pi -
-ssh localhost
-```
-e.g.
-```
 pi@raspberrypi:~$ su pi - -c "ssh localhost"
 Password: ********
 pi@localhost's password: ********
